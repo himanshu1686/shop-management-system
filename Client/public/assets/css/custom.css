@@ -1,0 +1,77 @@
+body {
+  font-family: cursive;
+}
+.black-overlay-sheet {
+  width: 100vw;
+  height: 100vh;
+  z-index: 25;
+  background-color: black;
+  opacity: 0.3;
+  position: fixed;
+  transition: opacity 0.3s ease-in-out;
+}
+.sidebar-wrapper {
+  z-index: 50;
+  position: absolute;
+}
+.sidebar {
+  background-color: aqua;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  transition: width 1s ease-in-out;
+}
+.sidebar .content {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+.sidebar-active {
+  width: 200px;
+}
+.sidebar-collapsed {
+  width: 0;
+  padding-left: 0;
+}
+.sidebar-wrapper .action {
+  font-weight: 800;
+  position: absolute;
+  font-size: 25px;
+  top: 30px;
+  right: -63px;
+}
+.item-col {
+  height: 100vh;
+  overflow: scroll;
+}
+.search-bar {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+}
+.item {
+  position: relative;
+}
+.item .addToList {
+  position: absolute;
+  z-index: 1;
+  right: 1px;
+  top: 45%;
+}
+
+.cart {
+  font-size: 12px;
+}
+.cart .cart-item {
+  position: relative;
+}
+.cart-item .remove {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 17px;
+  padding: 0px;
+  line-height: 17px;
+  font-size: 28px;
+  border-radius: 7px;
+}
